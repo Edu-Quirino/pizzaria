@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Pizzaria Delivery</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <h1>Pizzaria Delivery</h1>
+
+    <form id="order-form">
+        <label for="pizza-type">Tipo de Pizza:</label>
+        <select id="pizza-type" name="pizza-type">
+            <option value="margherita">Margherita</option>
+            <option value="pepperoni">Pepperoni</option>
+            <option value="vegetariana">Vegetariana</option>
+        </select>
+
+        <label for="pizza-size">Tamanho:</label>
+        <input type="radio" id="small" name="pizza-size" value="small">
+        <label for="small">Pequena</label>
+        <input type="radio" id="medium" name="pizza-size" value="medium">
+        <label for="medium">Média</label>
+        <input type="radio" id="large" name="pizza-size" value="large">
+        <label for="large">Grande</label>
+
+        <label for="toppings">Coberturas:</label>
+        <input type="checkbox" id="cheese" name="toppings" value="cheese">
+        <label for="cheese">Queijo</label>
+        <input type="checkbox" id="pepperoni" name="toppings" value="pepperoni">
+        <label for="pepperoni">Pepperoni</label>
+        <input type="checkbox" id="mushrooms" name="toppings" value="mushrooms">
+        <label for="mushrooms">Cogumelos</label>
+
+        <label for="delivery-address">Endereço de Entrega:</label>
+        <input type="text" id="delivery-address" name="delivery-address">
+
+        <label for="payment-method">Método de Pagamento:</label>
+        <select id="payment-method" name="payment-method">
+            <option value="credit-card">Cartão de Crédito</option>
+            <option value="paypal">PayPal</option>
+        </select>
+
+        <button type="submit">Fazer Pedido</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
